@@ -12,7 +12,7 @@ body {
 }
 
 .box__info {
-    padding: 100px 100px;
+    padding: 100px 50px;
     background: #1F2937;
 }
 
@@ -23,7 +23,7 @@ body {
     line-height: 32px;
     font-weight: 800;
     color: #FFFFFF;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .info__span {
@@ -34,7 +34,7 @@ body {
     font-weight: 400;
     font-size: 20px;
     color: #D5D4D8;
-    margin-top: 0px;
+    margin-top: 5px;
 }
 
 #generate-btn {
