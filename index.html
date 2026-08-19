@@ -9,24 +9,25 @@
 </head>
 <body>
     <div class="box__info">
+        <div class="container">
+            <button id="theme-switch">
+                <img src="img/sun.svg" alt="">
+                <img src="img/moon.svg" alt="">
+            </button>
 
-        <button id="theme-switch">
-            <img src="img/sun.svg" alt="">
-            <img src="img/moon.svg" alt="">
-        </button>
+            <h1 class="info__title">Generate a <span class="info__span">random password</span></h1>
+            <p class="info__text">Never use an insecure password again.</p>
+            <button id="generate-btn" onclick="getRandomPassword()">Generate passwords</button>
 
-        <h1 class="info__title">Generate a <span class="info__span">random password</span></h1>
-        <p class="info__text">Never use an insecure password again.</p>
-        <button id="generate-btn" onclick="getRandomPassword()">Generate passwords</button>
-        
-        <div class="divider"></div>
+            <div class="divider"></div>
 
-        <div class="box__output">
-            <p id="output-one"></p>
-            <p id="output-two"></p>
+            <div class="box__output">
+                <p id="output-one"></p>
+                <p id="output-two"></p>
+            </div>
+
+            <p id="copy-text"></p>
         </div>
-
-        <p id="copy-text"></p>
     </div>
 
 
