@@ -39,6 +39,8 @@ body {
 }
 
 .box__info {
+    max-width: 700px;
+    height: 500px;
     padding: 100px 50px;
     background: var(--box-color);
     border-radius: 10px;
@@ -64,7 +66,6 @@ body {
     font-weight: 400;
     font-size: 20px;
     color: var(--secondary-text);
-    margin-top: 5px;
 }
 
 #generate-btn {
@@ -75,7 +76,8 @@ body {
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
-    margin-top: 30px;
+    margin-top: 50px;
+    cursor: pointer;
 }
 
 .divider {
@@ -98,6 +100,15 @@ body {
     text-align: center;
     align-content: center;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+#copy-text {
+    color: var(--accent-color);
+    font-size: 18px;
+    text-align: center;
+    align-content: center;
+    margin-top: 40px;
 }
 
 #theme-switch {

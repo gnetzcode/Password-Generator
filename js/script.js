@@ -3,6 +3,7 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 let passwordOutput1 = document.getElementById("output-one")
 let passwordOutput2 = document.getElementById("output-two")
+let copyEl = document.getElementById("copy-text")
 
 
 function getRandomPassword() {
@@ -15,7 +16,7 @@ function getRandomPassword() {
         passwordOutput1.textContent += characters[randomItem1]
     }
 
-    for (let j = 0; j < 18; j++) {
+    for (let j = 0; j < 15; j++) {
         let randomItem2 = Math.floor( Math.random() * characters.length )
         passwordOutput2.textContent += characters[randomItem2]
     }
@@ -26,13 +27,13 @@ function copyPassword(event) {
     const passwordText = event.target.textContent;
 
     if (!passwordText) {
-        alert("Сначала сгенерируйте пароль!");
+        copyEl.textContent = "Firstly generate a password!";
         return;
     }
 
     navigator.clipboard.writeText(passwordText)
         .then(() => {
-            alert("Copied!");
+            copyEl.textContent = "Copied!";
         })
         .catch(err => {
             console.error("Error: ", err);
