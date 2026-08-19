@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="lightmode.js" defer></script>
 </head>
 <body>
     <div class="box__info">
+
+        <button id="theme-switch">
+            <img src="img/sun.svg" alt="">
+            <img src="img/moon.svg" alt="">
+        </button>
+
         <h1 class="info__title">Generate a <span class="info__span">random password</span></h1>
         <p class="info__text">Never use an insecure password again.</p>
         <button id="generate-btn" onclick="getRandomPassword()">Generate passwords</button>
